@@ -45,10 +45,6 @@ func establishDBConnection() {
 }
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
 
 	// twilioErr := messageHandler.SendSMS("+", "+", "Helloooo!")
 	// if twilioErr != nil {
@@ -61,10 +57,6 @@ func main() {
 		fmt.Println("ListenAndServe error:", webhookErr)
 	}
 
-	if err != nil {
-		fmt.Printf("error: %v\n", err)
-		return
-	}
 }
 
 func CheckError(err error) {
