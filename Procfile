@@ -1,1 +1,1 @@
-web: /bin/Identity-Server
+web: /bin/identityapp-server
