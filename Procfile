@@ -1,1 +1,1 @@
-web: ./bin/Identity-Server
+web: go run main.go
