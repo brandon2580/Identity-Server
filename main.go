@@ -51,7 +51,7 @@ func main() {
 	// 	fmt.Println(err)
 	// }
 	http.HandleFunc("/webhook", messageHandler.WebhookHandler)
-	webhookErr := http.ListenAndServe(":8080", nil)
+	webhookErr := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 
 	if webhookErr != nil {
 		fmt.Println("ListenAndServe error:", webhookErr)
