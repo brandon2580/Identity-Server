@@ -1,1 +1,1 @@
-web: go run main.go
+web: PATH=$PATH:/usr/local/go/bin go run main.go
